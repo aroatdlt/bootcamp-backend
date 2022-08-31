@@ -4,7 +4,8 @@ En este base de datos puedes encontrar un montón de apartamentos y sus reviews,
 
 **Pregunta**: Si montaras un sitio real, ¿qué posibles problemas pontenciales le ves a cómo está almacenada la información?
 
-<!-- Indica aquí que problemas ves -->
+**Repuesta**: El principal problema es que al tener toda la información en el mismo documento, se va a cargar en el working set todo y esto nos generará un problema de rendimiento.
+
 
 # Consultas
 
