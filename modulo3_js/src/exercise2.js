@@ -5,8 +5,7 @@ const newValue = "furor";
 const replaceAt = (arr, index, newElement) => {
   const cutInitialPartArray = arr.slice(0, index);
   const cutFinalPartArray = arr.slice(index+1, elements.length)
-  const newArray = [...cutInitialPartArray, newElement, ...cutFinalPartArray]
-  return newArray
+  return [...cutInitialPartArray, newElement, ...cutFinalPartArray]
 };
 
 const result = replaceAt(elements, index, newValue);

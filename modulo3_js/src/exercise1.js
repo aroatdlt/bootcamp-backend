@@ -19,11 +19,11 @@ const fromCSV = (csv, nAttrs = 6) => {
     const result = [];
     for(let i = 0; i < array.length; i += 6){
       const deletePreviousRow = array.slice(i);
-      const personinformation = {}
+      const personInformationIntoObject = {}
       for(let i = 0; i < nAttrs; i++) {
-        personinformation[getKeys[i]] = deletePreviousRow[i];
+        personInformationIntoObject[getKeys[i]] = deletePreviousRow[i];
       }
-      result.push(personinformation);
+      result.push(personInformationIntoObject);
     }
     return result
   };
