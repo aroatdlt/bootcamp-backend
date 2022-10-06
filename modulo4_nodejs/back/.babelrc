@@ -9,5 +9,10 @@
       }
     ],
     "@babel/preset-typescript"
-  ]
+  ],
+  "env": {
+    "development": {
+    "sourceMaps": "inline"
+    }
+  }
 }
