@@ -4,8 +4,8 @@ import https from 'https'
 import fs from 'fs';
 
 import { accommodationsApi } from "./accommodations.api";
-import { createRestApiServer } from "./core/servers";
-import { envConstants } from "./core/constants";
+import { createRestApiServer } from "core/servers";
+import { envConstants } from "core/constants";
 
 const serverOptions = {
   key: fs.readFileSync('certificates/key.pem'),

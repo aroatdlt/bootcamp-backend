@@ -10,6 +10,21 @@
     ],
     "@babel/preset-typescript"
   ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "common": "./src/common",
+          "common-app": "./src/common-app",
+          "core": "./src/core",
+          "dals": "./src/dals",
+          "pods": "./src/pods"
+        }
+      }
+    ]
+  ],
   "env": {
     "development": {
     "sourceMaps": "inline"

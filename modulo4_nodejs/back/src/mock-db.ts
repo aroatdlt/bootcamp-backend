@@ -2217,14 +2217,20 @@ export const getAccommodationsList = async () => {
 };
 
 export const getAccommodationsListByCountry = async (country) => {
-  return mockAccommodationsList.filter(accommodation => {
-    accommodation.address.country === country
+  const filteredByCountryAccommodations = mockAccommodationsList.filter(accommodation => {
+    if(accommodation.address.country === country){
+      return accommodation
+    }    
   })
+
+  return filteredByCountryAccommodations.length === 0 ? mockAccommodationsList : filteredByCountryAccommodations
 }
 
 export const getAccommodationById = async (accommodationId) => {
   return mockAccommodationsList.find(accommodation => {
-    accommodation._id === accommodationId
+    if(accommodation._id === accommodationId){
+      return accommodation
+    }
   })
 }
 
