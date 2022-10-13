@@ -1,24 +1,85 @@
 export interface Accommodation {
-  id: string;
-  name: string;
-  description: string;
-  bedrooms: number;
-  bathrooms: number;
-  beds: number;
-  address: Address;
-  image: string;
-  reviews: Reviews;
+  _id: string,
+  listing_url: string,
+  name: string,
+  summary: string,
+  space: string,
+  description: string,
+  neighborhood_overview: string,
+  notes: string,
+  transit: string,
+  access: string,
+  interaction: string,
+  house_rules: string,
+  property_type: string,
+  room_type: string,
+  bed_type: string,
+  minimum_nights: string,
+  maximum_nights: string,
+  cancellation_policy: string,
+  calendar_last_scraped: object,
+  first_review?: object,
+  last_review?: object,
+  last_scraped: object,
+  accommodates: number
+  bedrooms: number,
+  bathrooms: Bathroom,
+  beds: number,
+  number_of_reviews: number,
+  amenities: Array<string>,
+  price: object,
+  security_deposit?: object,
+  cleaning_fee: object,
+  extra_people: object,
+  guests_included: object,
+  address: Address,
+  host: object,
+  images: Image,
+  reviews: Reviews,
+  availability: object,
+  review_scores: object,
+  weekly_price?: object,
+  monthly_price?: object,
 }
 
-interface Reviews extends Array<Review>{}
+export interface Reviews extends Array<Review>{}
 
 export interface Review {
-  date: Date;
+  _id: string,
+  date: CustomDate,
   reviewer_name: string,
   comments: string,
+  listing_id: string,
+  reviewer_id: string,
 }
 
 interface Address {
-  country: string
-  street: string
+  country: string,
+  street: string,
+  suburb: string,
+  government_area: string,
+  market: string,
+  country_code: string,
+  location: { 
+    type: string,
+    coordinates: number[],
+    is_location_exact: boolean
+  } 
+}
+
+interface Image {
+  thumbnail_url: string,
+  medium_url: string, 
+  picture_url: string, 
+  xl_picture_url: string
+}
+
+interface CustomDate {
+ $date: {
+  $numberLong: string
+ }
+}
+
+interface Bathroom {
+  $numberDecimal: string
 }

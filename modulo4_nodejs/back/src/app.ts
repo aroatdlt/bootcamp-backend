@@ -3,7 +3,7 @@ import path from "path";
 import https from 'https'
 import fs from 'fs';
 
-import { accommodationsApi } from "./accommodations.api";
+import { accommodationsApi } from "./pods/accommodation";
 import { createRestApiServer } from "core/servers";
 import { envConstants } from "core/constants";
 
