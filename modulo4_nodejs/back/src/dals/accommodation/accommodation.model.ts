@@ -1,5 +1,7 @@
+import { ObjectId } from "mongodb";
+
 export interface Accommodation {
-  _id: string,
+  _id: ObjectId,
   listing_url: string,
   name: string,
   summary: string,
@@ -45,7 +47,7 @@ export interface Accommodation {
 export interface Reviews extends Array<Review>{}
 
 export interface Review {
-  _id: string,
+  _id: ObjectId,
   date: CustomDate,
   reviewer_name: string,
   comments: string,

@@ -1,4 +1,5 @@
 import { Accommodation } from "./accommodation";
+import { ObjectId } from "mongodb"
 
 export interface DB {
   accommodations: Accommodation[];
@@ -7,7 +8,7 @@ export interface DB {
 export const db: DB = {
   accommodations: [
     {
-      "_id": "10006546",
+      "_id": new ObjectId(),
       "listing_url": "https://www.airbnb.com/rooms/10006546",
       "name": "Ribeira Charming Duplex",
       "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube) - UNESCO World Heritage Site. Centenary building fully rehabilitated, without losing their original character.",
@@ -165,7 +166,7 @@ export const db: DB = {
       },
       "reviews": [
         {
-          "_id": "58663741",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1451797200000"
@@ -177,7 +178,7 @@ export const db: DB = {
           "comments": "A casa da Ana e do Gonçalo foram o local escolhido para a passagem de ano com um grupo de amigos. Fomos super bem recebidos com uma grande simpatia e predisposição a ajudar com qualquer coisa que fosse necessário.\r\nA casa era ainda melhor do que parecia nas fotos, totalmente equipada, com mantas, aquecedor e tudo o que pudessemos precisar.\r\nA localização não podia ser melhor! Não há melhor do que acordar de manhã e ao virar da esquina estar a ribeira do Porto."
         },
         {
-          "_id": "62413197",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1455426000000"
@@ -189,7 +190,7 @@ export const db: DB = {
           "comments": "We are french's students, we traveled some days in Porto, this space was good and we can cooking easly. It was rainning so we eard every time the water fall to the ground in the street when we sleeping. But It was cool and or was well received by Ana et Gonçalo"
         },
         {
-          "_id": "68310569",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1459742400000"
@@ -201,7 +202,7 @@ export const db: DB = {
           "comments": "We had a spledid time in the old centre of Porto.\r\nThe appartment is very well situated next to the old Ribeira square. It's perfect to have such an appartment to your disposal, you feel home, and have a place to relax between the exploration of this very nice city.\r\nWe thank Ana & Gonçalo, and we hope the appartment is free when we go back next year. Porto is charming original."
         },
         {
-          "_id": "69693942",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1460433600000"
@@ -213,7 +214,7 @@ export const db: DB = {
           "comments": "Ana and Goncalo were very helpful and accommodating. When they were not available they put us in touch with their nephew who was equally as helpful. The flat was as described, neat and tidy. The weather was quite cold, but thankfully A&G left us with extra blankets and electric heaters to use. Location was great. Outside the flat there was a slight smell of the river/ sewage, but in all honesty it did not come into the flat, and once you go down the road it doesn't carry on. This may also have been down to the very wet weather we had while there. All in all, very happy and would definitely recommend."
         },
         {
-          "_id": "71451096",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1461556800000"
@@ -225,7 +226,7 @@ export const db: DB = {
           "comments": "The hosts were very accommodating and agreed to meet with my parents as they were arriving before us. Communicated very well and always responded in a very timely manner. You couldn't have asked for a better location of this apartment and the place was identical to the pictures in the in the listing."
         },
         {
-          "_id": "73191268",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1462593600000"
@@ -237,7 +238,7 @@ export const db: DB = {
           "comments": "THE PLACE TO BE, l'appartement est situé au milieu de la Ribeira , tout peut se faire à pieds c'est l'ideal,l'appartement est très bien agencé et équipé.\r\nNous avons passé un séjour très agréable dans ce duplex avec beaucoup de charme .\r\nAccueil très chaleureux de Ana et Gonçalo, ils ont pris du temps pour nous indiquer tout ce qu'il y avait à faire sur Porto et répondus  à toutes nos interrogations en terme de commodités.. Merci..\r\n"
         },
         {
-          "_id": "77438107",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1464667200000"
@@ -249,7 +250,7 @@ export const db: DB = {
           "comments": "We had a great time in Porto. Ana’s & Goncalo’s apartment is located right in the heart of the Old Town and is great value for money. You really are at the centre of things and it’s the perfect place to get swept away in the hustle and bustle of Porto. Ana and Goncalo were great hosts."
         },
         {
-          "_id": "89637734",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1469764800000"
@@ -261,7 +262,7 @@ export const db: DB = {
           "comments": "Ana and Gonçalo were very welcoming and made a lot of information about Porto's sights available. It was very clean, very beautiful and the location was superb. It does have a lot of restaurants around it, so it could be a bit noisy for us at night but otherwise  great location. We would stay there again. "
         },
         {
-          "_id": "96574146",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1471924800000"
@@ -273,7 +274,7 @@ export const db: DB = {
           "comments": "Super appartement très bien placé, au cœur de l'animation de la Ribeira !\r\nNous avons passé un super séjour à Porto !\r\nToutes les informations données par Ana et les documents laissés nous ont bien aidé à organiser notre séjour.  Nous avons (presque) tout fait à pied ! Le parking Ribeira est proche et bien utile pour garer le véhicule.\r\nMerci !!!\r\nPhilippe\r\n"
         },
         {
-          "_id": "108444999",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1476590400000"
@@ -285,7 +286,7 @@ export const db: DB = {
           "comments": "The appartment was great, it is really nice and cosy, and it is situated at a perfect location. Ana and Goncalo were very friendly, they were very helpfull during our stay. We had a great time during our stay in Porto!"
         },
         {
-          "_id": "111065376",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1477800000000"
@@ -297,7 +298,7 @@ export const db: DB = {
           "comments": "Kävimme majoittajan kanssa viestinvaihtoa ennen lomaa ja he antoivat mukavan vaikutelman. He olivatkin hyvin mukavia ihmisiä. He tulivat lentokentälle vastaan kahdella autolla mikä oli hyvin ystävällistä. He kertoivat myös kaupungista ja sen nähtävyyksistä. Asunnon sijainti oli täydellinen. Se oli myös erittäin romanttinen ja kaunis. Kokemus oli hyvin onnistunut."
         },
         {
-          "_id": "111655209",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1477972800000"
@@ -309,7 +310,7 @@ export const db: DB = {
           "comments": "Hemos pasado unos días increíbles en Oporto. Llegamos más tarde de lo que habíamos pensado y Ana & Gonçalo nos esperaron pacientemente y nos facilitaron la llegada, además nos recibieron con un regalo de bienvenida!. Nos dieron todo tipo de indicaciones y consejos más que de sobra para disfrutar de los días que estuvimos allí. La ubicación de la casa es inmejorable!! la única pega fue que el soporte de la ducha estaba roto pero como eran pocos días no quisimos molestar a Ana & Gonçalo y no se lo comentamos. "
         },
         {
-          "_id": "132811625",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1487480400000"
@@ -321,7 +322,7 @@ export const db: DB = {
           "comments": "Great location, comfortable place, responsive and friendly host! Highly recommended!"
         },
         {
-          "_id": "144627907",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1492315200000"
@@ -333,7 +334,7 @@ export const db: DB = {
           "comments": "This house is in the heart of Porto, set back enough to be away from the hustle and bustle but only a few steps up from the river, bars and restaurants. A great place to stay.\nThe house was clean and functional. Ana and Goncalo are perfect hosts with lots of information on places to visit and   eat."
         },
         {
-          "_id": "149009243",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1493697600000"
@@ -345,7 +346,7 @@ export const db: DB = {
           "comments": "The location of the house is wonderful! You are in the heart of the old city and the Douro ist just a few meters away. Perfect for a first visit to Porto!\nVery cosy and warm house with everything you need.\nGonçalo gives a lot of good tips that will help you to have a perfect stay. Communication is very easy with him."
         },
         {
-          "_id": "150518693",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1494216000000"
@@ -357,7 +358,7 @@ export const db: DB = {
           "comments": "We spend a really good time in Porto, the flat is so well situated. The bridge is just next door, the view on the river is amazing, and plenty of restaurants and pubs, transport are just around.\nGonzalo is very kind to wait for us, also lat, for the check in, thank you.\n"
         },
         {
-          "_id": "155913947",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1496030400000"
@@ -369,7 +370,7 @@ export const db: DB = {
           "comments": "Thanks for a great stay! 6 of us were in Porto for a long weekend and we had a blast. The apartment was perfect; location and size to accomodate us. The hosts were great, then even picked us up at the airport (for a fee but it was a great service). Thanks again! Bridget."
         },
         {
-          "_id": "159692160",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1497153600000"
@@ -381,7 +382,7 @@ export const db: DB = {
           "comments": "Superb location and very nice, big and overall pleasant apartment!"
         },
         {
-          "_id": "164881958",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1498708800000"
@@ -393,7 +394,7 @@ export const db: DB = {
           "comments": "The apartment provides basic facilities but is good value for money and very well positioned for easy access to restaurants and bars, the Ribeira district and the Port house in Gaia."
         },
         {
-          "_id": "166990342",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1499227200000"
@@ -405,7 +406,7 @@ export const db: DB = {
           "comments": "Ana und Gonçalo sind sehr hilfsbereite liebe Leute, die  alles tun, damit man sich wohl fühlt. Wenn es etwas zu beanstanden gab, wird das sofort problemlos erledigt. Das Apartment ist charmant, die Möbel schon etwas mitgenommen, aber das passt insgesamt ins Bild von Porto und macht den Reiz aus. Die Lage ist super, genau am Duoro. Es gibt Strassenmusik bis in den späten Abend und auch morgens geht's früh los mit fröhlichen Lärm von der Flusspromenade. Nichts also für Leute, die es ruhig brauchen! Die Lage ist wirklich exklusiv und tröstet über den recht teuren Mietpreis. Im Umfeld gibt es typische Touri-Fallen, wo alles doppelt kostet, aber gleichzeitig findet man auch sehr nette kleine Bars, in der man chillig und günstig frühstücken oder generell lecker essen kann. Die Stadt ist klein genug, um sich schnell zurechtzufinden und groß genug, um immer wieder neues zu entdecken. Wir waren zu dritt (50, 25, 20 Jahre) und haben die Zeit wirklich genossen. "
         },
         {
-          "_id": "180030365",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1502251200000"
@@ -417,7 +418,7 @@ export const db: DB = {
           "comments": "Very well located appartement ideal for a family of 5 who want to make the most of the city center.\nIt may be a bit noisy at night but this is acceptable.\nGlobally we recommend this place."
         },
         {
-          "_id": "198679769",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1506744000000"
@@ -429,7 +430,7 @@ export const db: DB = {
           "comments": "Great location! The apartment is somewhat basic. We were family with 3 teenagers and had a good time. Also it’s a bit noisy until very late at night."
         },
         {
-          "_id": "199885226",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1507003200000"
@@ -441,7 +442,7 @@ export const db: DB = {
           "comments": "This apartment is in the perfect location for being in the middle of the action. There were tons of restaurants close to the apartment and it was a quick walk across the bridge to tour the Port wineries. Be forewarned; if you are looking for a very quiet location, this area may not be for you. However, if you are looking to step outside of your door and start enjoying what Porto has to offer, I recommend this location."
         },
         {
-          "_id": "207942636",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1509336000000"
@@ -453,7 +454,7 @@ export const db: DB = {
           "comments": "Acceuil très très chaleureux de Gonçalo  et Ana lors de notre arrivée très tardive due à un changement d\"'horaire d'avion....appartement super bien situé dans Porto près du Douro, fidèle aux photos mises sur le site....Nous avons adoré ce quartier bien animé  .....Encore merci à Gonçalo et Ana. ...."
         },
         {
-          "_id": "209455775",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1509854400000"
@@ -465,7 +466,7 @@ export const db: DB = {
           "comments": "Localização perfeita, muito aconchegante, Ana e Gonçalo são pessoas muito atenciosas e simpáticas!"
         },
         {
-          "_id": "223995518",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1514869200000"
@@ -477,7 +478,7 @@ export const db: DB = {
           "comments": "Perfect position to see everything that Porto has to offer. Ana and Gonçalo were great hosts quick to respond and welcoming. Couldn't recommend a better place to stay in Porto to be able to see the sights and be within walking distance to so many restaurants."
         },
         {
-          "_id": "225725834",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1515301200000"
@@ -489,7 +490,7 @@ export const db: DB = {
           "comments": "Great location!"
         },
         {
-          "_id": "230559180",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1517115600000"
@@ -501,7 +502,7 @@ export const db: DB = {
           "comments": "Probably Ana&Gonzalo´s place is great for summer but definitely not in winter. The house is NOT WARM and ready for a stay in cold and humit season. There is NO HEATING in any of the rooms and living room, only bed covers (not nordic duvet) and small heaters which you have to switch off during the night. Those were not enough during our stay in January even we had sunny days! Moreover we were 5 people in the house without NO HOT WATER enough for all of us. \nThe pictures did not show the reality. Furniture was much older and WiFi signal is only available in the living room, not the rooms.\nOn the other hand, location is great if you want to stay close to the river. Although think about that all restaurants, bars and main tourist attractions are close to Train Station and Clerigos Tower which means 15-20 min uphill walking distance from the house."
         },
         {
-          "_id": "232271631",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1517720400000"
@@ -513,7 +514,7 @@ export const db: DB = {
           "comments": "Appartement très cosy! Nous y avons été pour un court séjour à 7 et avons adoré. L'appartement est idéalement situé dans le quartier magnifique de la Ribeira. L'accueil a ete très chaleureux: Nous étions trompé d'adresse car le GPS avaient confondus les rues mais Ana a su nous retrouver pour nous amener à l'appartement.  L'appartement était très  propre et nous avons eu largement tout ce qu'il fallait en linge.\nEncore un Grand merci à eux!"
         },
         {
-          "_id": "234847900",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1518584400000"
@@ -525,7 +526,7 @@ export const db: DB = {
           "comments": "ottima ospitalità, la posizione della casa è ottima, vicina ai mezzi di trasporto e alle principali attrazioni della città, torneremo sicuramente. Consigliato!!"
         },
         {
-          "_id": "235293831",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1518757200000"
@@ -537,7 +538,7 @@ export const db: DB = {
           "comments": "Nice apartment in Porto, we enjoy staying in it for a few days. The apartment is comfortable and has a very nice location. Thanks to Ana and Gonsalo for hospitality."
         },
         {
-          "_id": "240252220",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1520139600000"
@@ -549,7 +550,7 @@ export const db: DB = {
           "comments": "Great location. Good value thanks for the stay"
         },
         {
-          "_id": "244738269",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1521432000000"
@@ -561,7 +562,7 @@ export const db: DB = {
           "comments": "Me and my friends (7 ppl tot) have booked Gonçalo and Ana’s apartment for our holidays and i think we cannot do a better choice like that.\nThe apartment is situated near Oporto’s riverside, in Ribeira district, at 2 minutes walking to Sao Bento’s station, 10minutes to Lello’s library and clerics’s tower. In less than 10 minutes u’re in Vila Nova De Gaia where u can find the wineries of porto’s wine.\nThe apartment is really spacious and comfortable, perfect for 7 italian people that want to have fun in Oporto.\nSuggested!!!"
         },
         {
-          "_id": "246334180",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1521950400000"
@@ -573,7 +574,7 @@ export const db: DB = {
           "comments": "L'emplacement et vraiment au coeur de l'animation du vieux Porto. Au pied de l'appartement se trouvent de charmants café avec vue sur le Douro.\nAna&Gonçalo ont été très attentionnés et à l'écoute de nos demandes\nMichel"
         },
         {
-          "_id": "259708770",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1525147200000"
@@ -585,7 +586,7 @@ export const db: DB = {
           "comments": "Great location right next to the Dom Luiz bridge and Douro river and plenty of restaurants. Enough room for about 6 people. Ana was very responsive to any concerns we had. Would stay again."
         },
         {
-          "_id": "263239322",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1526011200000"
@@ -597,7 +598,7 @@ export const db: DB = {
           "comments": "The house was supernice and located in the middle of the center. We really enjoyed our stay here!"
         },
         {
-          "_id": "264125733",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1526184000000"
@@ -609,7 +610,7 @@ export const db: DB = {
           "comments": "Great Location. Ana & Gonzalo are very nice, flexible, and fast-responsive. Apartment is ok but only one toilet for 3 rooms + sofa-bed."
         },
         {
-          "_id": "267283092",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1526875200000"
@@ -621,7 +622,7 @@ export const db: DB = {
           "comments": "Ana&Gonçalo's apartment was nice, comfy, clean and most of all really well located in the city center!!!\nWe could easily move everywhere in Porto from there and it was perfect for discovering the city!\nAlso, I'd like to mention that Gonçalo was nice and patient with us on the day of the arrival even if we were a bit late.\nI strongly recommend this place!"
         },
         {
-          "_id": "269853203",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1527480000000"
@@ -633,7 +634,7 @@ export const db: DB = {
           "comments": "Incredible location, beautiful house. Everything was very easy and we would highly recommend this accommodation. Excellent. "
         },
         {
-          "_id": "272277314",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1527998400000"
@@ -645,7 +646,7 @@ export const db: DB = {
           "comments": "good lication good experience"
         },
         {
-          "_id": "275044729",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1528603200000"
@@ -657,7 +658,7 @@ export const db: DB = {
           "comments": "We loved it"
         },
         {
-          "_id": "302971185",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1533528000000"
@@ -669,7 +670,7 @@ export const db: DB = {
           "comments": "Great location right on the river. Lots of tourists in the area. Easy to get to public transportation. Besides the hot weather, we had a good time. "
         },
         {
-          "_id": "320887590",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1536465600000"
@@ -681,7 +682,7 @@ export const db: DB = {
           "comments": "Merci à Ana & Gonçalo pour l’accueil !"
         },
         {
-          "_id": "325025167",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1537243200000"
@@ -693,7 +694,7 @@ export const db: DB = {
           "comments": "-"
         },
         {
-          "_id": "331735682",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1538539200000"
@@ -705,7 +706,7 @@ export const db: DB = {
           "comments": "Our stay in Ana and Gancalo’s apartment was lovely. The location was perfect and Gancalo graciously picked us up from the airport. It does get a little loud in the morning but that’s only because the apartment is perfectly located right on the river front. You do have to hold the shower wand when showering but the pressure is good. Overall I would definitely stay in the apartment again!"
         },
         {
-          "_id": "334789252",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1539144000000"
@@ -717,7 +718,7 @@ export const db: DB = {
           "comments": "It was a wonderful experience, the location is fantastic and the accommodations were outstanding."
         },
         {
-          "_id": "347372623",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1541912400000"
@@ -729,7 +730,7 @@ export const db: DB = {
           "comments": "Ana’s place is very well located, at 2 min walking distance to the Douro, so that everything is close by! Ana communicated well regarding check in info, and was even flexible regarding check out timing. The description / pictures are relevant; only the bathroom  is not as recent. We appreciated the extra blanket as heaters have to be switched off once u leave the flat, but once they are switched on we had no problem afterwards regarding the temperature of the flat."
         },
         {
-          "_id": "354708379",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1543726800000"
@@ -741,7 +742,7 @@ export const db: DB = {
           "comments": "If you want to stay in the heart of Porto for reasonable price this is a good alternative. However, I’d selected again it for group of more than 6 people."
         },
         {
-          "_id": "362865132",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1545886800000"
@@ -753,7 +754,7 @@ export const db: DB = {
           "comments": "Very helpful hosts. Cooked traditional Portuguese Christmas dinner for 6. Location is perfect. Right off square that is on river right by famous bridge engineered by protege of Gustav Eifel. Looks like same type structure."
         },
         {
-          "_id": "364728730",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1546232400000"
@@ -765,7 +766,7 @@ export const db: DB = {
           "comments": "Ana & Goncalo were great on communication, responding instantly to questions.\n5 of us stayed in their home for 3 nights and found the location to be great and central to all the amazing sights Porto has to offer. \nWe found the home to be difficult to heat on our first night, the rooms have heaters but took time to get the room to a comfortable temperature level. But in warmer months Im sure this isn't an issue.\nThe beds are a little hard with one slightly out of shape,  and the shower is fairly basic (hand held) but does the job. Because of the central location some noise can be expected early in the mornings. \nOverall the apartment suited our needs for our short stay and the price is more than reasonable for what we got."
         },
         {
-          "_id": "403055315",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1547960400000"
@@ -779,7 +780,7 @@ export const db: DB = {
       ]
     },
     {
-      "_id": "10009999",
+      "_id": new ObjectId(),
       "listing_url": "https://www.airbnb.com/rooms/10009999",
       "name": "Horto flat with small garden",
       "summary": "One bedroom + sofa-bed in quiet and bucolic neighbourhood right next to the Botanical Garden. Small garden, outside shower, well equipped kitchen and bathroom with shower and tub. Easy for transport with many restaurants and basic facilities in the area.",
@@ -901,7 +902,7 @@ export const db: DB = {
       "reviews": []
     },
     {
-      "_id": "1001265",
+      "_id": new ObjectId(),
       "listing_url": "https://www.airbnb.com/rooms/1001265",
       "name": "Ocean View Waikiki Marina w/prkg",
       "summary": "A short distance from Honolulu's billion dollar mall, and the same distance to Waikiki. Parking included. A great location that work perfectly for business, education, or simple visit. Experience Yacht Harbor views and 5 Star Hilton Hawaiian Village.",
@@ -1064,7 +1065,7 @@ export const db: DB = {
       },
       "reviews": [
         {
-          "_id": "4765259",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1369368000000"
@@ -1076,7 +1077,7 @@ export const db: DB = {
           "comments": "Our stay was excellent.  The place had a breath taking view.  David was very accommodating with our hotel stay, parking availability and all of our concerns & questions.  He did above and beyond what anyone would want.  He's a man of his word and very professional.  We highly recommend for everyone to stay in all of the places he recommended.  Thank you David for a accommodating our wonderful and memorable stay in Honolulu, Hawaii.  God Bless!  Henry & Jacqui (SF, CA)"
         },
         {
-          "_id": "4908312",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1370059200000"
@@ -1088,7 +1089,7 @@ export const db: DB = {
           "comments": "Tell others in the Airbnb community about your stay."
         },
         {
-          "_id": "7099260",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1378440000000"
@@ -1100,7 +1101,7 @@ export const db: DB = {
           "comments": "This is everything we expected and hoped for in a sub-$100/night condo stay in Waikiki. This definitely isn't the Ritz, and if you're looking for a luxury get-away, you're barking up the wrong tree. However, if you're like we were: first time visitors on a budget with humble taste, then this place is perfect. The location is a tiny bit removed from the touristy Beachwalk shopping area, but not so far as to preclude you from limbering up for a spirited walk over there. And by the marina, you're actually quite close to the Ala Moana mall. So, the location is good. The place itself is a modest studio setup, but perfectly adequate with a good sized bed for a couple, enough space for your luggage, and a kitchenette and bathroom that though tight, is perfectly fine. There's also cable and internet if you're looking for homey creature comforts. It was also fantastic to have a free parking space included, an air conditioning wall unit, and the panoramic window view was pretty cool, though you only really get a peak of the beach. Also, David was very good about staying in contact with us the day we arrived to get acclimated, and we did not have further occasion to require his services the rest of our stay, so our contact was minimal, but satisfactory ... no problem there. The minor quibbles we had were pretty thin walls, so we would often hear the murmur of the neighbors' TVs. Also, there seemed to be two elevators working the entire building, so they could take quite a while to pop up. Again though, if you're like us, your #1 priorities are spend a minimal amount of time in your room, get out to experience Hawaii, come back to a sanitary place to sleep at night, all while staying within a reasonable budget. This place fit the bill, and we would recommend it to anyone with the same priorities."
         },
         {
-          "_id": "8363944",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1382932800000"
@@ -1112,7 +1113,7 @@ export const db: DB = {
           "comments": "Fantastic location! Everything in the condo was great and David was lovely and super easy to deal with. Would recommend!"
         },
         {
-          "_id": "8905060",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1385355600000"
@@ -1124,7 +1125,7 @@ export const db: DB = {
           "comments": "The flat is ok for a couple . Location of flat is awesome. Its close to the waikiki beach, Ala Moana park and shoppings . Parking was 20 bucks/day . Overall nice place."
         },
         {
-          "_id": "9392425",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1388034000000"
@@ -1136,7 +1137,7 @@ export const db: DB = {
           "comments": "We stayed 23 days in December in \"Ocean view Waikiki Marina\". Our stay was great, the apartment is very well located, clean and comfortable. David and Nicole were very attentive and helped us at all. Loved our vacation in Hawaii and want to return soon. \r\n\r\nAloha!"
         },
         {
-          "_id": "9496168",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1388466000000"
@@ -1148,7 +1149,7 @@ export const db: DB = {
           "comments": "If you're looking to spend most of your time in Hawaii outside (and not inside your room or your hotel, like with the Waikiki resort complexes) then this apartment will do the trick. It's definitely not luxurious but has the basics and is in a great location. It fits 2 people but more would be cramped. \nYou can hit the beach in as little as 5 mns walking or get to central Waikiki beach in 15-20 mns walking.  It's also easy to catch a bus to visit something outside Waikiki. There is a convenience store nearby, as well as several breakfast and restaurant options. The apartment has a small kitchen with cooking utensils but we ended up mostly eating dinners out. \nDavid was courteous and likely very knowledgeable about the area but we didn't ask him for suggestions, we ended up just using our guide book. \nOverall if you want to experience Waikiki without spending a fortune or being pampered, this is a great option. Mahalo David!"
         },
         {
-          "_id": "9770517",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1389243600000"
@@ -1160,7 +1161,7 @@ export const db: DB = {
           "comments": "Great location, adequate for a short stay, free parking too!"
         },
         {
-          "_id": "10423465",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1392699600000"
@@ -1172,7 +1173,7 @@ export const db: DB = {
           "comments": "David was there to meet us as soon as we arrived from the airport and was very friendly. He communicated with us before we arrived as well. The apartment was very nice, great location, clean and exactly what we were looking for. Location has a nice pool area."
         },
         {
-          "_id": "10956151",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1394856000000"
@@ -1184,7 +1185,7 @@ export const db: DB = {
           "comments": "Thoroughly enjoyed our stay. The condo is in a great location if you want to be in or near Waikiki and Ala Moana. It's a small studio, and not luxurious, but great if you want a functional, reasonably comfortable and very affordable base for exploring Oahu. The parking space is wonderful if you rent a car, as otherwise you're looking at an additional $15-$20 a day. The building is right on Ala Moana Blvd so it's noisy if you keep the windows open, but that's also true of many high-price Waikiki hotel rooms. Air conditioning is a bit noisy; I slept with earplugs but my boyfriend didn't need them (I'm a light sleeper and use them at home). The condo has a full size fridge, small cooktop, microwave, coffee maker, coffee press, beach chairs, some knackered beach mats, towels, pots, plates, etc.. Wifi is a plus. The bathroom appears quite recently updated, and though small is nice - great shower. \r\n\r\nCons: There's no lanai and the view is very partial, but to us those were small things. Elevators were sometimes very slow and occasionally out of commission, which was a hassle and a bit concerning.\r\n\r\nWe never actually met David. All was handled by text and email. He instructed us to get someone to let us in to the building, which seemed a bit dodgy, but in the end it was no problem, and he said to call if there was any issue. Condo door was unlocked and keys were on the table.\r\n\r\nI would consider staying here again if I plan to stay in the Waikiki vicinity. \r\n\r\n"
         },
         {
-          "_id": "11063672",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1395115200000"
@@ -1196,7 +1197,7 @@ export const db: DB = {
           "comments": "If you are looking for a home base with the basics to lay your head at night and have breakfast in and then head out for the day this fits the bill. It's close to Waikiki and the downtown area but not in the thick of things so if you're looking to avoid the 24/7 hustle and bustle then this might work for you. There is a basic kitchenette and eating area. Accessories for enjoying the sand and surf are available for use, pool, and hot tub as well, and secure parking which is a plus.\r\n\r\nIf you're looking for expansive ocean views, a room to hang out and relax in with up to date decor, and where you can easily meet and get to know people staying in the complex then this wouldn't be for you. The dependability of the elevators, particularly during high winds, is a bit of a concern.\r\n\r\nI never met David, things were handled via airbnb email. I spoke with him on the phone when my plans changed and he was flexible in changing the dates of the original reservation.\r\n"
         },
         {
-          "_id": "11326297",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1396152000000"
@@ -1208,7 +1209,7 @@ export const db: DB = {
           "comments": "Our stay here was great and just as we expected!  The apartment was in a really fantastic location and was very convenient.  It is a small, simple, and nice apartment with a cool view.  As a bonus, we talked with some other people that lived there that gave us great pointers about what to do during our stay there.  The included parking was also extremely convenient!  Check in and check out was simple, David's communication was outstanding, and he was very accommodating.  I would not hesitate to stay here again."
         },
         {
-          "_id": "13172738",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1400644800000"
@@ -1220,7 +1221,7 @@ export const db: DB = {
           "comments": "The reservation was canceled 21 days before arrival. This is an automated posting."
         },
         {
-          "_id": "13305026",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1400990400000"
@@ -1232,7 +1233,7 @@ export const db: DB = {
           "comments": "Great location close to Waikiki beach. The apartment was clean and nice and simple, me and my wife would definitely consider staying here again.\r\nParking in the building was great for us as we where moving around the island a lot.\r\n\r\nWould definitely recommend!\r\n\r\nAloha!"
         },
         {
-          "_id": "13853905",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1402027200000"
@@ -1244,7 +1245,7 @@ export const db: DB = {
           "comments": "Excellent.  No Resort Fee.  No Parking Fee.  No Internet fee.  Kitchenette.  Walk to everything."
         },
         {
-          "_id": "15400986",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1404792000000"
@@ -1256,7 +1257,7 @@ export const db: DB = {
           "comments": "Great little unit, close to beach, shopping and restaurants with laundry machines on lower floors. Air conditioning was a nice treat, as was wifi and a parking spot in a secure garage. We chilled out for a day in the unit just watching tv.  The local coffee house next to the IHOP was well worth the wait. David was helpful and responsive to inquiries. "
         },
         {
-          "_id": "15837412",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1405483200000"
@@ -1268,7 +1269,7 @@ export const db: DB = {
           "comments": "We were really pleased staying at the Waikiki Marina.  The unit is in a great location and has all of the comforts to make staying there a pleasure.  Everything was clean and well maintained and we appreciated the solid wifi access as I had to work part of the time we stayed here.  I would definitely recommend this comfortable unit to anyone wanting a more private and more affordable Waikiki experience!"
         },
         {
-          "_id": "16132741",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1406001600000"
@@ -1280,7 +1281,7 @@ export const db: DB = {
           "comments": "Nice unit! Not fancy but perfect!\nComfortable and quiet. I did use \nthe unit as a home base and I was very happy to be able to cook my meals there.\nVery good location! Right next to the Ala Moana shopping center.\nDavid was very helpful and accommodating and a gracious host!\nI would stay again, and recommend! "
         },
         {
-          "_id": "16977781",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1407211200000"
@@ -1292,7 +1293,7 @@ export const db: DB = {
           "comments": "Great location, close to everything. I really appreciated the parking space! Great response from David, wonderful experience. Very basic place but had everything I needed. Thanks!"
         },
         {
-          "_id": "18260191",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1408852800000"
@@ -1304,7 +1305,7 @@ export const db: DB = {
           "comments": "The apartment is very centrally located and we had a great time walking around. The parking also helped and allowed us to drive anywhere we wanted."
         },
         {
-          "_id": "18985212",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1409803200000"
@@ -1316,7 +1317,7 @@ export const db: DB = {
           "comments": "This unit was as pictured - practical and fit the bill for what we required: bed, kitchenette and a good wifi connection. The secure parking, cable tv and air conditioning unit were a bonus, as was the view! The unit was in a prime location, close to Waikiki and Ala Moana, and really convenient to locate. David was easy to reach and the check-in / check-out process was easy. The unit is also close to major highways so it is easy to get on/off hwy 1. \r\n\r\nBoth elevators were down at one point during our stay, but it wasn't a problem - walking up/down was easy (we didn't have anything to carry) and one elevator was fixed by the time we got back in the evening. \r\n\r\nDavid, thank you for the stay - it was great! "
         },
         {
-          "_id": "19131965",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1410062400000"
@@ -1328,7 +1329,7 @@ export const db: DB = {
           "comments": "David was extremely communicative throughout the entire process. Getting into the room was very simple and parking was a huge plus. The location of the unit is perfect - walking distance from all the Wakiki beaches, restaurants, shops, and ABC stores. \r\n\r\nThe unit itself was a bit run-down. The cabinets and doors felt like they needed an update and the bed wasn't the most comfortable. The elevator in the building (our unit was on the 16th floor) was painfully slow but that's no fault of David's. \r\n\r\nAll in all, this was a great move over a hotel or something and the price is great."
         },
         {
-          "_id": "20956267",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1412740800000"
@@ -1340,7 +1341,7 @@ export const db: DB = {
           "comments": "The location was fantastic.  David is very responsive if you have any questions and is accommodating when you have special requests.  We arrived a day early due to unforeseen circumstances but we were able to check in a day early and also we were able to leave our luggage on the last day for a few extra hours."
         },
         {
-          "_id": "23490671",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1417496400000"
@@ -1352,7 +1353,7 @@ export const db: DB = {
           "comments": "We enjoyed our stay at David's place in Waikiki. The apartment is small but clean. Amenities are basic. The kitchen and the bathroom could use some updates, but everything is functional. Wifi worked perfectly, so no complaint on connectivity. Checking in was very easy. We followed the instruction to get the key and found our parking spot without any problem. The location of the apartment is also very convenient. A few blocks to the beach and choices of restaurants near by. There are less tourists in this part of the town, so it's more quite and less crowded"
         },
         {
-          "_id": "23593371",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1417842000000"
@@ -1364,7 +1365,7 @@ export const db: DB = {
           "comments": "We had a pleasant stay. Location was super. Only 10 minute walk to waikiki beach and short drive to alamoena mall."
         },
         {
-          "_id": "25433210",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1421384400000"
@@ -1376,7 +1377,7 @@ export const db: DB = {
           "comments": "Staying at David's apartment was quite a pleasurable experience.  He was very responsive when scheduling the apartment.  Access was incredibly easy as he left the keys in a lock box near the private parking.  Unit was clean, great views of the marina and in the heart of Waikiki.  All of this for under $110/night, I couldn't have asked for more.  If ever back in Oahu, I'll be sure to reach out to David again."
         },
         {
-          "_id": "26470420",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1423803600000"
@@ -1388,7 +1389,7 @@ export const db: DB = {
           "comments": "Smooth check in/out.  Great building."
         },
         {
-          "_id": "26905009",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1424581200000"
@@ -1400,7 +1401,7 @@ export const db: DB = {
           "comments": "First, I would like to say that while I only met David briefly once, he was always available and responded to messages/questions immediately and was happy to give ideas and suggestions for places to visit. The unit was as described with all the basic amenities one would need. I couldn't have asked for a better location as you could easily walk to the mall and the park as well as catch the bus for getting around the island. I would happily stay here again should my travels take me back to Honolulu."
         },
         {
-          "_id": "27136069",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1424926800000"
@@ -1412,7 +1413,7 @@ export const db: DB = {
           "comments": "Very easy to communicate with David in regards to the logistics of checking in, checking out, the lockbox instructions etc. Apartment location was convenient to Waikiki. Included parking was also great. \nThe actual unit itself was very worn out and although I'm sure it was cleaned, it didn't feel too clean because of the amount of wear and tear. \nBut for the price and location, it couldn't be beat!"
         },
         {
-          "_id": "27507360",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1425618000000"
@@ -1424,7 +1425,7 @@ export const db: DB = {
           "comments": "Had a great stay.  Felt a lot like a hotel room, which was fine as we had plenty to do out on the town. Great location, David was friendly, helpful and responsive,as were the building security guards."
         },
         {
-          "_id": "27760285",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1426046400000"
@@ -1436,7 +1437,7 @@ export const db: DB = {
           "comments": "The location could not be beat, and such a great price.  Super convenient, parking included, walking distance to plenty of shops, restaurants, bars, and the beach.   The unit is a little dated, but it's clean and comfortable.  David's instructions were clear and easy on getting into the unit and finding the parking.  The elevators are a bit slow and one of them was always down for service, but that's no fault of Davids, just a warning if you are in impatient person.  If you are looking for an affordable place in a very good location check this place out.  "
         },
         {
-          "_id": "29296049",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1428292800000"
@@ -1448,7 +1449,7 @@ export const db: DB = {
           "comments": "Location, location, location.  As a former 5-year resident of Honolulu I can attest that this building is conveniently located at the entrance of Waikiki close to the Ala Moana Shopping Center and Ala Moana Beach.  This was my very first experience ever using Airbnb so I didn't really know what to expect.  I travel to Honolulu 4 times a year and always stay in a hotel, but my cousin recommended I try Airbnb as a less expensive alternative.  I had some technical issues when I first checked into the studio getting the window A/C unit (A/C remote I believe had dead batteries) and cable TV to work (T/V HDMI input wrong) but with David conveniently living in the building, he was quick to remedy the situation.  "
         },
         {
-          "_id": "30307467",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1429502400000"
@@ -1460,7 +1461,7 @@ export const db: DB = {
           "comments": "The unit is older and in need of a facelift but it’s got the basics, including a full size fridge, and best of all includes a free designated parking space.  Parking is difficult to come by in Waikiki and when available will run you at least $25 a day so this condo is a bargain.  Lockbox made for easy check-in/check-out.  Elevators in this tower are iffy but at least one of the two elevators was working during our stay so not a problem.  David was great and yes, the next time we need to visit Waikiki, we’ll book the apt. again."
         },
         {
-          "_id": "32681422",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1432094400000"
@@ -1472,7 +1473,7 @@ export const db: DB = {
           "comments": "Thank you for the Location, the parking space , the Wifi and TV . The communication was either by phone or email and was prompt. It was 5 mins from Ala Moana shopping centre and  5 mins from the beach. it was easy to walk to the Main Waikiki beach even at night. Bus 20 or the trolley was easy to access from the main road and a lot of eating places nearby. The weather was a nice 27 deg with a few showers from time to time and the Circle Island tour from Roberts or  any other tour guide was around $35  and  was worth the price. "
         },
         {
-          "_id": "33675716",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1433044800000"
@@ -1484,7 +1485,7 @@ export const db: DB = {
           "comments": "This was the perfect location for my trip.  It had everything I needed. The A/C was a little questionable, but the large window worked great. You can't be the price or the location.  Great stay.  "
         },
         {
-          "_id": "34556306",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1433822400000"
@@ -1496,7 +1497,7 @@ export const db: DB = {
           "comments": "The quick communication and easy access to this unit made our stay a breeze, David is lovely and always available to contact if needed. The description and images of the unit are 100% accurate - location is prime! The inclusion of a carpark means we could hire a bike/car and explore the island! Minutes walk to shopping, beach and restaurants. Had an amazing stay, will definitely be back!"
         },
         {
-          "_id": "34792224",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1434081600000"
@@ -1508,7 +1509,7 @@ export const db: DB = {
           "comments": "Perfect location , everything is a walking distance(beach, shops bus stops.etc). The unit is outdated but it does the job and everything works great. i have no complains me and my gf liked it and the price was right."
         },
         {
-          "_id": "35546261",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1434772800000"
@@ -1520,7 +1521,7 @@ export const db: DB = {
           "comments": "Overall a good experience. David was prompt and businesslike with communication. The apartment is in a good location, close to the convention center and Waikiki. The apartment is basic."
         },
         {
-          "_id": "37843504",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1436587200000"
@@ -1532,7 +1533,7 @@ export const db: DB = {
           "comments": "Nous avons passé une semaine très agréable dans le logement de David. Le check-in est simple et efficace, l'emplacement est très bon (on peut aller à Waikiki à pied sans problème, mais on évite ici le bruit et l'agitation du quartier) et la taille de l'appartement tout à fait satisfaisante pour deux personnes. On oublie rapidement le côté un peu vétuste de l'immeuble et le bruit de la clim (qui fonctionne très bien pour refroidir la chambre cela dit) en appréciant :\r\n- La propreté du logement\r\n- La vue sur le port et l'océan \r\n- Tout est fonctionnel, et il y a même quelques objets utiles en plus comme une glacière souple que nous avons pu utiliser pour la plage\r\n- La piscine et le jacuzzi\r\n- La place de parking réservée pour nous\r\n- La rapidité de David pour répondre à nos questions\r\n- La petite supérette ABC store juste au coin de la rue qui dépanne bien en cas de besoin.\r\n\r\nSi nous avons la chance de revenir un jour à Hawaï, ce pourrait être dans ce même logement avec plaisir !\r\n\r\nMahalo :) "
         },
         {
-          "_id": "38303028",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1436846400000"
@@ -1544,7 +1545,7 @@ export const db: DB = {
           "comments": "Super easy check in and convenient location. Was as advertised. Would definitely stay here again."
         },
         {
-          "_id": "40390482",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1438228800000"
@@ -1556,7 +1557,7 @@ export const db: DB = {
           "comments": "The room was beautiful and the location was awesome. There was a lot to do in the area and you definitely get your money's worth and some! I loved it, it was fun and relaxing!"
         },
         {
-          "_id": "40991480",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1438574400000"
@@ -1568,7 +1569,7 @@ export const db: DB = {
           "comments": "Great location. Awesome view. The room is a bit older. David was clear and prompt with his communications."
         },
         {
-          "_id": "42667108",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1439611200000"
@@ -1580,7 +1581,7 @@ export const db: DB = {
           "comments": "The place was great, even nicer than it appears on the pictures. The kitchen is well supplied with all the necessary appliances and dishes. The bedroom is large and comfortable. The location was ideal for my purpose. \r\nCheck in and out was a breeze. I'd come back again!"
         },
         {
-          "_id": "43293928",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1439870400000"
@@ -1592,7 +1593,7 @@ export const db: DB = {
           "comments": "David is a very kind and helpful person, he helped us to call taxi, the room is at good location, walk to beach, walk to shopping mall, more cheaper than other hotels like hoilton or hyatt*-:-)"
         },
         {
-          "_id": "45347142",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1441080000000"
@@ -1604,7 +1605,7 @@ export const db: DB = {
           "comments": "Got what we paid for. Very basic room, great location just a walk from the beach. Although the place looked older it was still very clean. The climate control was really nice. Directions were very clear. Good stay."
         },
         {
-          "_id": "45555971",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1441339200000"
@@ -1616,7 +1617,7 @@ export const db: DB = {
           "comments": "Great convenient location\r\nDavid was extremely helpful and always available - a real gentleman!\r\nAccomodation was practical and functional\r\nHighly recommended!"
         },
         {
-          "_id": "47266766",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1442462400000"
@@ -1628,7 +1629,7 @@ export const db: DB = {
           "comments": "Overall experience was great! The apartment room was a good size for my husband and I. The bed was comfortable, the room was clean, and David was kind enough to provide the little necessities and supplies we needed to enjoy our trip.  Location can't be beat! Whether you've got a car, plan to walk, or use public transport, the building was right in the middle of the hustle and bustle. We found the ABC store just beside the building very useful. The AC worked perfectly! Kept us cool and comfortable. \n\nDealing with David was a pleasure. He remained in close communication with us. Met him once, asked us how we were doing, and was very pleasant.\n\nFor the price and the location, this is a great room!"
         },
         {
-          "_id": "48673332",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1443412800000"
@@ -1640,7 +1641,7 @@ export const db: DB = {
           "comments": "This condo is in a great location, very close to lots of restaurants, shopping and beaches. It's small but clean. The only down side was one of the elevators was broken but we were on vacation so we weren't in a rush. David was very helpful with all instructions.\n\nMahalo, David"
         },
         {
-          "_id": "51287788",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1445227200000"
@@ -1652,7 +1653,7 @@ export const db: DB = {
           "comments": "Great location within a short walk to Waikiki hotspots and the Ala Moana mall.  The apartment was clean and comfortable.  The only downside of the building was that one of the two elevators was under maintenance during my stay, so getting up and down from the apartment to the ground floor took a little while.  But, aside from that one little annoyance, this was a really nice place to stay for a week.  David was very prompt in responding to all of my communications, and had everything ready for me when I arrived."
         },
         {
-          "_id": "51894139",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1445745600000"
@@ -1664,7 +1665,7 @@ export const db: DB = {
           "comments": "Waikiki Marina is in a convenient location. It does however need some sprucing up including new bed sheets and towels. It has a lot of potential for being a lovely apartment. David was very accommodating in helping us store our luggage before check in time which was very helpful."
         },
         {
-          "_id": "52582553",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1446264000000"
@@ -1676,7 +1677,7 @@ export const db: DB = {
           "comments": "The location is great, particularly if you are going to the Convention center or Waikiki.  \n\nOnly challenge was the elevators. It's a 40 story building with 2 elevators.  One had apparently been out of service for a couple of weeks and then the other stopped working.  After a few climbs to the 16th floor at least one was back in service.  Both David and AirBNB were very attentive and I got a partial refund for that day.  \n\nThere is shopping nearby.  Cleanliness was good.  David lives next door and so can be there quickly if needed. "
         },
         {
-          "_id": "53135972",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1446699600000"
@@ -1688,7 +1689,7 @@ export const db: DB = {
           "comments": "Place was as advertised, clean and tidy, only 5 minutes away from waikiki beach and the Ala Moa shopping centre. Can't beat the price especially with parking included in waikiki! fresh towels and beach utilities were provided.  100% recommended!"
         },
         {
-          "_id": "54378233",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1447909200000"
@@ -1700,7 +1701,7 @@ export const db: DB = {
           "comments": "We never did meet David in person, but communicated by email and text.  His directions for getting the keys to the condo were easy to follow and we had no trouble.  The room was comfortable and clean but could use some new drapes and carpet. Our only complaint was beyond David's control--only one elevator in the building was working so getting up and down was very slow."
         },
         {
-          "_id": "56182071",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1449723600000"
@@ -1712,7 +1713,7 @@ export const db: DB = {
           "comments": "A great apartment at a very convenient and quiet location yet walking distance to shopping mall and to Waikiki.  Parking is included which is not so common for most listing. \n\nApartment is simple and cosy. All basic necessities are provided. Feels like home right away. We got lucky with the elevators (unlike most reviews) as both elevators were operating during most part of our stay. \n\nWe had a bathroom crisis in the middle of the night when the flushing tank overflowed and almost flooded. Luckily David took care of it right away in the morning and even cleaned up the affected. \n\n"
         },
         {
-          "_id": "57005229",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1450674000000"
@@ -1724,7 +1725,7 @@ export const db: DB = {
           "comments": "David was easy to communicate with.  The location of the apartment is excellent with regard to Waikiki and the Convention Centre.  Only negative is the rather poor elevator support.  Only one was functioning at the time I was there. Made getting up and down slow."
         },
         {
-          "_id": "57628226",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1451278800000"
@@ -1736,7 +1737,7 @@ export const db: DB = {
           "comments": "The condo is well located and the check in process was really easy. David always answered my emails really quickly, which was helpful given the fluid nature of my plans. Mahalo."
         },
         {
-          "_id": "59111317",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1452142800000"
@@ -1748,7 +1749,7 @@ export const db: DB = {
           "comments": "Easy to schedule, instructions for finding the key were simple to follow, parking garage remote was easy to operate, and everything worked out well. Spent 9 days on Oahu to attend a conference and visit family. If you're looking for a no frills, small but clean place to stay where you can save a few $$ by cooking and warming local meals easily in the mini kitchen and walking to the Hilton Hawaiian Village (.8 mi.) this is the place for you. Elevator was a bit slow so if you have to be somewhere on time you'll need to allow maybe 10-15 additional min. A/C worked but slow upon startup but who cares if you're enjoying the outdoors and rarely in the room? Ran into David in the lobby just before checking out--he is kind and lovely! Would stay here again."
         },
         {
-          "_id": "59991234",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1453093200000"
@@ -1760,7 +1761,7 @@ export const db: DB = {
           "comments": "The condo was a great deal, centrally located by shops and restaurants in the Ala Moana district. Comfortable bed, AC, a nice shower and plenty of clean towels. Also the parking spot was a huge plus. David's directions were clear and accurate and he was very responsive to my questions. I would definitely come back."
         },
         {
-          "_id": "61152426",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1454302800000"
@@ -1772,7 +1773,7 @@ export const db: DB = {
           "comments": "Le studio est propre et bien situé. Les explications de David pour les clés et le parking étaient très utiles. Les couchers de soleil sont magnifiques du studio! On a aussi profité des serviettes de plages et du parasol qui étaient à notre disposition. Le seul hic? Les ascenseurs! Sur 4 nuits, on s eu une seule journée où les deux fonctionnaient alors il fallait attendre entre 10-15 minutes chaque fois ... "
         },
         {
-          "_id": "62695425",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1455598800000"
@@ -1784,7 +1785,7 @@ export const db: DB = {
           "comments": "David was great, and the apartment was spacious, clean, and well-priced. I give it three stars only because of the problems with the elevator. The one working elevator was broken half the time and incredibly slow the other half. Instead of waiting 30+ minutes (not exaggerating), we went up and down 16 flights of stairs. I felt awful for those on higher floors.\r\n\r\nThis is certainly not David's fault, but I hope it is fixed soon. It's ridiculous."
         },
         {
-          "_id": "65138444",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1457672400000"
@@ -1796,7 +1797,7 @@ export const db: DB = {
           "comments": "We stayed for 12 days and rented a car for a week. The parking is already included which is a bonus. The location is close to Ala Moana centre, the beach and convention centre in short, you can go anywhere you want using a bus or a trolley. The place has a comfortable bed and lots of clean towel. The only problem is the elevator because only 1 is working and most of the time it's broken. David was kind enough to help us bring down our luggages. "
         },
         {
-          "_id": "70789595",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1461124800000"
@@ -1808,7 +1809,7 @@ export const db: DB = {
           "comments": "With the exception of the lift, the apartment exceeded the description in AirBnB.  The apartment is good size for two people and very clean, the linens are of good quality and ample, and the kitchen is well equipped.  Of note are the windows which span 18 feet to provide good natural lighting, a partial view of the marina and ocean front, and good ventilation (we never used the A/C).  We were impressed with the location – walking distance to the hotel beaches, the Fort Derussy military facilities, Ala Moana Park and Shopping Mall, public transportation, restaurants, and convenience stores.  The elevator service for the 40 story/140 unit building  is an ongoing problem, with only one ten-person lift  operating “in slow mode for  safety” or not at all if winds are high.  You'll certainly need patience when gaining access to the apartment and possibly physical endurance to negotiate the stairs (we only had to climb the stairs 3 times in 2 weeks)."
         },
         {
-          "_id": "71782191",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1461816000000"
@@ -1820,7 +1821,7 @@ export const db: DB = {
           "comments": "This studio is fabulous ! Incredible location, steps away from everything. We found the studio as described, cosy and very well maintained with fresh towels and all other household amenities ready for us. The building was also very nice and quiet.\r\nParking space was a great plus!\r\nMoreover, David was a lovely host, always available to help and very quick at answering emails and enquiries.\r\nWe are certainly looking forward to coming back and staying in the exact same studio."
         },
         {
-          "_id": "72782520",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1462334400000"
@@ -1832,7 +1833,7 @@ export const db: DB = {
           "comments": "The host responded quickly to our questions. The area was great as it was close to the beach, restaurants and stores. "
         },
         {
-          "_id": "80380380",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1466136000000"
@@ -1844,7 +1845,7 @@ export const db: DB = {
           "comments": "이 숙소에 머물게 되어서 정말 행운이라고 생각합니다.\r\n위치도 정말 좋았고, 무엇보다 주차시설이 포함된 숙소여서 \r\n유용했습니다.\r\n\r\n방 안에서의 wi-fi도 잘 작동했으며, 다른 후기에서 엘레베이터에 대한 문제가 많아 보여 걱정했지만, 제가 묵었던 일정에는 전혀 문제되지 않았습니다.\r\n\r\n전반적으로 만족스러운 숙소였습니다."
         },
         {
-          "_id": "82870741",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1467259200000"
@@ -1856,7 +1857,7 @@ export const db: DB = {
           "comments": "David's instructions make arriving and checking in as easy as any hotel. The condo is in a great location and was a comfortable stay."
         },
         {
-          "_id": "84876745",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1468036800000"
@@ -1868,7 +1869,7 @@ export const db: DB = {
           "comments": "Fantastic location very close to the beach and pick up spots for tours. The free parking space is in a secure parking garage and is very handy due to the lack of public parking in the area. The apartment itself is basic, but provides all the necessities and is good for the price. Only downsides are the noise of the AC and the hot water a bit inconsistent at times. David was very responsive to messages and we would highly recommend him as a host. Overall a great experience and we would definitely stay here in the future."
         },
         {
-          "_id": "85836803",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1468382400000"
@@ -1880,7 +1881,7 @@ export const db: DB = {
           "comments": "La habitación era tal cual la descripción. El parking muy cómodo y la ubicación también. La wifi era rápida.\r\nAntes y durante la estadía, David respondió a mis consultas de forma sumamente ágil.\r\nFue muy buena y recomendable estadía."
         },
         {
-          "_id": "87154164",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1468814400000"
@@ -1892,7 +1893,7 @@ export const db: DB = {
           "comments": "David's room is in Waikiki and a close walk to the Ala Moana mall, making it easy to find restaurants. The room itself was easily accessible, with the directions David provided, and was very clean when we arrived there. Everything is just as the post says, with a coin laundry, full kitchen, free parking, and enough room for 2 people. Would definitely stay here again."
         },
         {
-          "_id": "92168567",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1470542400000"
@@ -1904,7 +1905,7 @@ export const db: DB = {
           "comments": " great locality , everything was fine , but a noisy air conditioner"
         },
         {
-          "_id": "98425794",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1472529600000"
@@ -1916,7 +1917,7 @@ export const db: DB = {
           "comments": "David answered all my questions and instructions were clear and easy to follow. The condo was clean, well appointed and centrally located. A nice bonus was the parking space as finding cheap and accessible parking in the area is slim to none. I noticed a few complaints about the elevator but we had no issues during our stay of 2 weeks. I would definitely recommend David's place if you're looking to stay in Waikiki."
         },
         {
-          "_id": "101509630",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1473739200000"
@@ -1928,7 +1929,7 @@ export const db: DB = {
           "comments": "Aloha, my husband and I had a wonderful 2 week stay at David's very conveniently located and fairly priced apartment. We were able to walk to the conference center for our event and to great beaches, restaurants and the world's largest outdoor mall. David was very easy to get a hold of and quick to respond to any questions we had. The apartment was clean and very functional. The elevator took time, especially at certain times during the day, but overall was not too inconvenient. We were grateful that we were able to park here too. We would recommend staying here and would like to stay again when we return "
         },
         {
-          "_id": "102393110",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1474171200000"
@@ -1940,7 +1941,7 @@ export const db: DB = {
           "comments": "Great host. Great communicator. Upgraded to another property in better location due to paint job at the original stay."
         },
         {
-          "_id": "106187557",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1475553600000"
@@ -1952,7 +1953,7 @@ export const db: DB = {
           "comments": "David is an amazing person. The flat has a good size, good view, the bed is good and whenever I needed had hot water in the shower. The lift system is undergoing renovation but only once waited for about 5 minutes, the other times I waited for the usual of a building of 40 floors. The parking space is a big deal because in that region the parking is very expensive. The flat is close to restaurants and is a few minutes walk from Waikiki Beach and Ala Moana mall. If I go back to Honolulu, I intend to stay again in this flat."
         },
         {
-          "_id": "107511886",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1476072000000"
@@ -1964,7 +1965,7 @@ export const db: DB = {
           "comments": "Worried about single operating elevator. Fortunately we did not have any problem."
         },
         {
-          "_id": "124940085",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1483419600000"
@@ -1976,7 +1977,7 @@ export const db: DB = {
           "comments": "We only had contact with our host due to the problem with the TV ( no reception)  and the big problem with the elevator being out of order.  The area was centrally located. close to mall, restaurants and beach. We felt safe walking at night and day."
         },
         {
-          "_id": "137659456",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1489636800000"
@@ -1988,7 +1989,7 @@ export const db: DB = {
           "comments": "Enjoyed a great stay at David's apartment. Private room, decent views, excellent location. One downside would be only the single elevator in action but it wasn't a dealbreaker and an easy work around. Again, location here is key. This apartment is right in the heart of it in easy access to all the main Waikiki amenities. Parking on site was great too. Would def stay here again! Cheers. "
         },
         {
-          "_id": "140575131",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1490846400000"
@@ -2000,7 +2001,7 @@ export const db: DB = {
           "comments": "We enjoyed very much in Oahu, the location was great it close to Wakiki beach."
         },
         {
-          "_id": "221205568",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1514178000000"
@@ -2012,7 +2013,7 @@ export const db: DB = {
           "comments": "Very nice place to stay for a week :)"
         },
         {
-          "_id": "225890671",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1515301200000"
@@ -2024,7 +2025,7 @@ export const db: DB = {
           "comments": "This was a great little place to stay. There's a nice view of the ocean, though distant. The place is close to everything (at least for us though we also don't mind walking). There are great restaurants at the Ala Moana mall. It's close to the Hilton. This place had everything we needed. We felt safe here. We enjoyed ourselves."
         },
         {
-          "_id": "226861563",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1515733200000"
@@ -2036,7 +2037,7 @@ export const db: DB = {
           "comments": "Convenient , and private location, secured building with gated parking. AC worked very well."
         },
         {
-          "_id": "228450253",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1516338000000"
@@ -2048,7 +2049,7 @@ export const db: DB = {
           "comments": "Location is very near the ocean, Waikiki, Ala Moana the largest shopping mall in Hawaii, is just a five-minute drive away giving you easy access to over 340 shops, services and entertainment. The mall is just down the street or you could walk there, free parking at the mall if you do drive. Down the street on Kalakaua is Luxury Row. The world’s top fashion houses—Tiffany & Co., Coach, Yves Saint Laurent, Chanel, Gucci, Tod’s, Bottega Veneta and Hugo Boss it was fun to go in the shops. Having a free parking space is a bonus. The view of the marina and ocean was beautiful. I could see boats headed out to sea and parasailers. Laundry located on the 5th floor along with the ice machine if you're headed out for the day a small cooler was provided. Vending machines are on the 2nd floor or you can walk to the ABC store at the corner. Bed was soft and comfortable. Air-conditioner works perfectly or you can open the window for an ocean breeze. Great pressure in the shower and plenty of towels. If you want to eat in there is a microwave, stove and fridge. During busy times you may have to wait for the elevator, only 1 is working, but there are stairs."
         },
         {
-          "_id": "242428030",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1520744400000"
@@ -2060,7 +2061,7 @@ export const db: DB = {
           "comments": "We were a little disappointed with the overall stay.  The place was not thoroughly cleaned. Everything was dusty or had not wiped down/ cleaned. Appliances were dirty so we did not use them and the sponge in the kitchen had hairs stuck on it. There was also hair on the floor and restroom. I feel like with the $75 cleaning fee, they needed to do a much better job. The TV had no reception so we weren’t able to use it. The mattress was pretty hard to sleep on. Although we were aware of the elevator issues, the wait for the elevator took up to 15 mins at times.\n\nWas located in a very nice location, close to everything. You could walk everywhere. The host was very nice and contacted us before arrival and before leaving.\n\nOverall, if you’re looking for a comfortable stay, I would suggest going to a hotel."
         },
         {
-          "_id": "244565441",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1521345600000"
@@ -2072,7 +2073,7 @@ export const db: DB = {
           "comments": "This is a great little apartment. Exactly as pictured. Great location. All of Waikiki is easily accessible either by walking, public transport or car. The big plus is the car space and wifi. David was easily contactable and was kind enough to let us check in early after a long overnight flight. No problem at all with the one lift."
         },
         {
-          "_id": "246121341",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1521864000000"
@@ -2084,7 +2085,7 @@ export const db: DB = {
           "comments": "What an amazing location! Super clean too! The parking was pretty convenient too :) You may want to bring an extra blanket for the winter. One of the elevators isn't working but the one that is will be fast enough (usually a few minutes at most), you're on island time now after all. Lots of clean towels which is highly appreciated!! Be sure to get malasadas from Leonard's Bakery, then snorkel Hanauma Bay and eventually get spicy shrimp at Ted's Bakery :D"
         },
         {
-          "_id": "260723260",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1525492800000"
@@ -2096,7 +2097,7 @@ export const db: DB = {
           "comments": "Great location, close to great restaurants, bars and Ala Moana shopping center. Check-in was very easy. Free parking!!! The place was clean and had everything I needed. Definitely would stay again!"
         },
         {
-          "_id": "270936742",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1527652800000"
@@ -2108,7 +2109,7 @@ export const db: DB = {
           "comments": "David's place is in a great location, short walk to beach, Ala Moana Centre / supermarket, buses 1 block away. Felt safe walking around even late at night. A good basic apartment with a great shower and fairly comfy bed."
         },
         {
-          "_id": "286685084",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1530849600000"
@@ -2120,7 +2121,7 @@ export const db: DB = {
           "comments": "Great location!"
         },
         {
-          "_id": "353832369",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1543467600000"
@@ -2132,7 +2133,7 @@ export const db: DB = {
           "comments": "We rate it 2/10.  It was dirty/sticky and falling apart-litterly doors falling off or missing-pictures are not accurate.. Floors under both sinks is rotten. Bed was horrible to sleep in.  Air conditioner super noisey.  A HUGE DISAPPOINTMENT"
         },
         {
-          "_id": "356310505",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1544158800000"
@@ -2144,7 +2145,7 @@ export const db: DB = {
           "comments": "This rental was the first time I’ve rented lodging from Airbnb. \n\nI’m giving the review three stars instead of one star because of two reasons, \nDavid, the property manager, and the location, in Waikiki. \n\nDavid is a very nice man who listened to our concerns and acted to help out as much as he could.  David responded usually within two hours.  We were disappointed with the rental but David worked with us to adjust the rental fees.\n\nThe biggest issue we saw was that the condo was dirty.  With a cleaning fee of $100 and the nice pictures on the Airbnb website, we expected a mostly dust free and clean rental.  We talked with David about the dirty items (there were many) and a couple missing items.  He was apologetic and did his best to help salvage our stay. \n\nWe ended up leaving before the end of the rental agreement and David worked with us on that.  After our stay, David messaged me to say that the items I told him were all addressed.  I would recommend that the next renter message David and verify.\n\nBecause of the location, the free parking, and David, I would rent the condo again."
         },
         {
-          "_id": "357822864",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1544504400000"
@@ -2156,7 +2157,7 @@ export const db: DB = {
           "comments": "Great location, an awesome host. We had an issue with WiFi and David resolved the issue fast so we can enjoy our trip. Aloha!"
         },
         {
-          "_id": "359748878",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1545022800000"
@@ -2168,7 +2169,7 @@ export const db: DB = {
           "comments": "Good value and central location"
         },
         {
-          "_id": "363959231",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1546059600000"
@@ -2180,7 +2181,7 @@ export const db: DB = {
           "comments": "Great location, very comfortable especially because of the parking space inside the building. Easy check in-check out procedure. We experienced a elevators failure during Christmas holidays, so no maintenance was available for few days. The apt is on the 16th floor so climbing the stairs (small ramps of 7 steps each though) at least twice a day was quite annoying. The host offered spontanusly 255€ refund for the inconvenience."
         },
         {
-          "_id": "400059558",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1547096400000"
@@ -2192,7 +2193,7 @@ export const db: DB = {
           "comments": "David was very helpful and accommodating!"
         },
         {
-          "_id": "407326158",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1548997200000"
@@ -2204,7 +2205,7 @@ export const db: DB = {
           "comments": "Great Location!!  Beware of only one working elevator for a 32 story building.  Not sure when the elevator work is going to be completed.  I just used the inconvenience as an opportunity to get my cardio in going up/down 16 flights of stairs each day.  Enjoyed my stay.  Thanks David!"
         },
         {
-          "_id": "409415200",
+          "_id": new ObjectId(),
           "date": {
             "$date": {
               "$numberLong": "1549515600000"

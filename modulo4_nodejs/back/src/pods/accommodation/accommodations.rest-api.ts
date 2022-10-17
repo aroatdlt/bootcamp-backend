@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { accommodationRepository } from "dals";
 import { mapAccommodationFromModelToApi, mapAccommodationListFromModelToApi, mapAccommodationFromApiToModel } from "./accommodation.mappers";
+import { ObjectId } from "mongodb";
 
 export const accommodationsApi = Router();
 
@@ -11,12 +12,6 @@ accommodationsApi
       const pageSize = Number(req.query.pageSize);
       const selectedCountry = req.query.country as string;
       let accommodationsListByCountry = await accommodationRepository.getAccommodationsListByCountry(selectedCountry, page, pageSize);
-   
-      if (page && pageSize) {
-        const startIndex = (page - 1) * pageSize;
-        const endIndex = Math.min(startIndex + pageSize, accommodationsListByCountry.length);
-        accommodationsListByCountry = accommodationsListByCountry.slice(startIndex, endIndex);
-      }
       res.send(mapAccommodationListFromModelToApi(accommodationsListByCountry));
     } catch (error) {
       next(error);
@@ -34,9 +29,14 @@ accommodationsApi
   .put("/:id", async (req, res, next) => {
     try {
       const { id } = req.params;
-      const review = mapAccommodationFromApiToModel(req.body);
-      const newReview = await accommodationRepository.insertReview(id, review);
-      res.status(201).send(mapAccommodationListFromModelToApi(newReview));
+      if (await accommodationRepository.getAccommodationById(id)) {
+        const review = mapAccommodationFromApiToModel(req.body);
+        const newReview = await accommodationRepository.insertReview(id, review);
+        res.status(201).send(mapAccommodationListFromModelToApi(newReview));
+      } else {
+        res.sendStatus(404);
+      }
+      
     } catch(error) {
       next(error)
     }

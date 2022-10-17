@@ -1,6 +1,8 @@
 import { AccommodationRepository } from "./accommodations.repository";
 import { Accommodation, Review } from "../accommodation.model";
 import { db } from "../../mock-data";
+import { ObjectId } from "mongodb";
+
 
 const paginateAccommodationList = (
   accommodationList: Accommodation[],
@@ -26,10 +28,15 @@ export const mockRepository: AccommodationRepository = {
     })
     return dbFilteredAccommodations.length === 0 ? paginateAccommodationList(db.accommodations, page, pageSize) : paginateAccommodationList(dbFilteredAccommodations, page, pageSize)
   },
-  getAccommodationById: async (id: string) => db.accommodations.find((accommodation) => accommodation._id === id),
+  getAccommodationById: async (id: string) => db.accommodations.find((accommodation) => accommodation._id === new Object(id)),
   insertReview: async (id: string, review: Review) => {
+    const _id = new ObjectId(id);
+    const reviewWithId = {
+      ...review,
+      _id
+    }
     return db.accommodations.map((accommodation) => {
-      Boolean(accommodation._id) ? accommodation.reviews.push(review) : accommodation
+      Boolean(accommodation._id.toHexString()) ? accommodation.reviews.push(reviewWithId) : accommodation
       return accommodation
     })
   },
