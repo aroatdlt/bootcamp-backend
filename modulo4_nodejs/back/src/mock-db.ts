@@ -42,9 +42,7 @@ let mockAccommodationsList = [
     "bedrooms": 3,
     "beds": 5,
     "number_of_reviews": 51,
-    "bathrooms": {
-      "$numberDecimal": "1.0"
-    },
+    "bathrooms": 1.0,
     "amenities": [
       "TV",
       "Cable TV",
@@ -804,9 +802,7 @@ let mockAccommodationsList = [
     "bedrooms": 1,
     "beds": 2,
     "number_of_reviews": 0,
-    "bathrooms": {
-      "$numberDecimal": "1.0"
-    },
+    "bathrooms": 1.0,
     "amenities": [
       "Wifi",
       "Wheelchair accessible",
@@ -936,9 +932,7 @@ let mockAccommodationsList = [
     "bedrooms": 1,
     "beds": 1,
     "number_of_reviews": 96,
-    "bathrooms": {
-      "$numberDecimal": "1.0"
-    },
+    "bathrooms": 1.0,
     "amenities": [
       "TV",
       "Cable TV",

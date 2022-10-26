@@ -1,7 +1,7 @@
 import { ObjectId } from "mongodb";
 
 export interface Accommodation {
-  _id: ObjectId,
+  _id: string,
   listing_url: string,
   name: string,
   summary: string,
@@ -25,7 +25,7 @@ export interface Accommodation {
   last_scraped: object,
   accommodates: number
   bedrooms: number,
-  bathrooms: Bathroom,
+  bathrooms: number,
   beds: number,
   number_of_reviews: number,
   amenities: Array<string>,
@@ -78,10 +78,6 @@ interface Image {
 
 interface CustomDate {
  $date: {
-  $numberLong: string
+  $numberLong: Date
  }
-}
-
-interface Bathroom {
-  $numberDecimal: string
 }

@@ -22,7 +22,7 @@ export const mapAccommodationFromModelToApi = (accommodation: model.Accommodatio
   reviews: lastFiveReviews(accommodation.reviews).map((review: model.Review): apiModel.Review => {
     return {
       _id: review._id, 
-      date: new Date(Number(review.date)).toUTCString(),
+      date: review.date?.$date?.$numberLong,
       reviewer_name: review.reviewer_name,
       comments: review.comments
     }
@@ -33,7 +33,7 @@ export const mapAccommodationFromApiToModel = (review: apiModel.Review): model.R
   _id: new ObjectId(review._id), 
   date: {
     $date: {
-      $numberLong: Date.now().toString()
+      $numberLong: new Date()
     }
   },
   reviewer_name: review.reviewer_name,
@@ -44,4 +44,6 @@ export const mapAccommodationFromApiToModel = (review: apiModel.Review): model.R
 
 export const mapAccommodationListFromModelToApi = (
   accommodationList: model.Accommodation[]
-): apiModel.Accommodation[] => accommodationList.map(mapAccommodationFromModelToApi);
+): apiModel.Accommodation[] => Array.isArray(accommodationList) 
+? accommodationList.map(mapAccommodationFromModelToApi)
+: [];

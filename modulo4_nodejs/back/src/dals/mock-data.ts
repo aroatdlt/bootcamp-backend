@@ -8,7 +8,7 @@ export interface DB {
 export const db: DB = {
   accommodations: [
     {
-      "_id": new ObjectId(),
+      "_id": new ObjectId().toString(),
       "listing_url": "https://www.airbnb.com/rooms/10006546",
       "name": "Ribeira Charming Duplex",
       "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube) - UNESCO World Heritage Site. Centenary building fully rehabilitated, without losing their original character.",
@@ -28,31 +28,29 @@ export const db: DB = {
       "cancellation_policy": "moderate",
       "last_scraped": {
         "$date": {
-          "$numberLong": "1550293200000"
+          "$numberLong": new Date()
         }
       },
       "calendar_last_scraped": {
         "$date": {
-          "$numberLong": "1550293200000"
+          "$numberLong": new Date()
         }
       },
       "first_review": {
         "$date": {
-          "$numberLong": "1451797200000"
+          "$numberLong": new Date()
         }
       },
       "last_review": {
         "$date": {
-          "$numberLong": "1547960400000"
+          "$numberLong": new Date()
         }
       },
       "accommodates": 8,
       "bedrooms": 3,
       "beds": 5,
       "number_of_reviews": 51,
-      "bathrooms": {
-        "$numberDecimal": "1.0"
-      },
+      "bathrooms": 1.0,
       "amenities": [
         "TV",
         "Cable TV",
@@ -169,7 +167,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1451797200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -181,7 +179,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1455426000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -193,7 +191,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1459742400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -205,7 +203,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1460433600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -217,7 +215,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1461556800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -229,7 +227,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1462593600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -241,7 +239,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1464667200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -253,7 +251,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1469764800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -265,7 +263,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1471924800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -277,7 +275,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1476590400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -289,7 +287,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1477800000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -301,7 +299,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1477972800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -313,7 +311,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1487480400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -325,7 +323,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1492315200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -337,7 +335,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1493697600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -349,7 +347,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1494216000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -361,7 +359,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1496030400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -373,7 +371,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1497153600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -385,7 +383,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1498708800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -397,7 +395,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1499227200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -409,7 +407,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1502251200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -421,7 +419,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1506744000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -433,7 +431,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1507003200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -445,7 +443,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1509336000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -457,7 +455,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1509854400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -469,7 +467,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1514869200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -481,7 +479,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1515301200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -493,7 +491,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1517115600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -505,7 +503,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1517720400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -517,7 +515,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1518584400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -529,7 +527,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1518757200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -541,7 +539,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1520139600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -553,7 +551,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1521432000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -565,7 +563,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1521950400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -577,7 +575,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1525147200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -589,7 +587,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1526011200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -601,7 +599,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1526184000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -613,7 +611,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1526875200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -625,7 +623,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1527480000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -637,7 +635,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1527998400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -649,7 +647,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1528603200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -661,7 +659,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1533528000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -673,7 +671,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1536465600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -685,7 +683,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1537243200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -697,7 +695,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1538539200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -709,7 +707,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1539144000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -721,7 +719,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1541912400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -733,7 +731,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1543726800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -745,7 +743,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1545886800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -757,7 +755,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1546232400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -769,7 +767,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1547960400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "10006546",
@@ -780,7 +778,7 @@ export const db: DB = {
       ]
     },
     {
-      "_id": new ObjectId(),
+      "_id": new ObjectId().toString(),
       "listing_url": "https://www.airbnb.com/rooms/10009999",
       "name": "Horto flat with small garden",
       "summary": "One bedroom + sofa-bed in quiet and bucolic neighbourhood right next to the Botanical Garden. Small garden, outside shower, well equipped kitchen and bathroom with shower and tub. Easy for transport with many restaurants and basic facilities in the area.",
@@ -800,21 +798,19 @@ export const db: DB = {
       "cancellation_policy": "flexible",
       "last_scraped": {
         "$date": {
-          "$numberLong": "1549861200000"
+          "$numberLong": new Date()
         }
       },
       "calendar_last_scraped": {
         "$date": {
-          "$numberLong": "1549861200000"
+          "$numberLong": new Date()
         }
       },
       "accommodates": 4,
       "bedrooms": 1,
       "beds": 2,
       "number_of_reviews": 0,
-      "bathrooms": {
-        "$numberDecimal": "1.0"
-      },
+      "bathrooms": 1.0,
       "amenities": [
         "Wifi",
         "Wheelchair accessible",
@@ -902,7 +898,7 @@ export const db: DB = {
       "reviews": []
     },
     {
-      "_id": new ObjectId(),
+      "_id": new ObjectId().toString(),
       "listing_url": "https://www.airbnb.com/rooms/1001265",
       "name": "Ocean View Waikiki Marina w/prkg",
       "summary": "A short distance from Honolulu's billion dollar mall, and the same distance to Waikiki. Parking included. A great location that work perfectly for business, education, or simple visit. Experience Yacht Harbor views and 5 Star Hilton Hawaiian Village.",
@@ -922,31 +918,29 @@ export const db: DB = {
       "cancellation_policy": "strict_14_with_grace_period",
       "last_scraped": {
         "$date": {
-          "$numberLong": "1551848400000"
+          "$numberLong": new Date()
         }
       },
       "calendar_last_scraped": {
         "$date": {
-          "$numberLong": "1551848400000"
+          "$numberLong": new Date()
         }
       },
       "first_review": {
         "$date": {
-          "$numberLong": "1369368000000"
+          "$numberLong": new Date()
         }
       },
       "last_review": {
         "$date": {
-          "$numberLong": "1549515600000"
+          "$numberLong": new Date()
         }
       },
       "accommodates": 2,
       "bedrooms": 1,
       "beds": 1,
       "number_of_reviews": 96,
-      "bathrooms": {
-        "$numberDecimal": "1.0"
-      },
+      "bathrooms": 1.0,
       "amenities": [
         "TV",
         "Cable TV",
@@ -1068,7 +1062,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1369368000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1080,7 +1074,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1370059200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1092,7 +1086,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1378440000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1104,7 +1098,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1382932800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1116,7 +1110,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1385355600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1128,7 +1122,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1388034000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1140,7 +1134,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1388466000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1152,7 +1146,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1389243600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1164,7 +1158,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1392699600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1176,7 +1170,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1394856000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1188,7 +1182,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1395115200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1200,7 +1194,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1396152000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1212,7 +1206,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1400644800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1224,7 +1218,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1400990400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1236,7 +1230,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1402027200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1248,7 +1242,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1404792000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1260,7 +1254,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1405483200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1272,7 +1266,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1406001600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1284,7 +1278,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1407211200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1296,7 +1290,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1408852800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1308,7 +1302,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1409803200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1320,7 +1314,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1410062400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1332,7 +1326,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1412740800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1344,7 +1338,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1417496400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1356,7 +1350,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1417842000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1368,7 +1362,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1421384400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1380,7 +1374,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1423803600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1392,7 +1386,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1424581200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1404,7 +1398,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1424926800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1416,7 +1410,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1425618000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1428,7 +1422,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1426046400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1440,7 +1434,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1428292800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1452,7 +1446,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1429502400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1464,7 +1458,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1432094400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1476,7 +1470,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1433044800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1488,7 +1482,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1433822400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1500,7 +1494,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1434081600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1512,7 +1506,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1434772800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1524,7 +1518,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1436587200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1536,7 +1530,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1436846400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1548,7 +1542,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1438228800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1560,7 +1554,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1438574400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1572,7 +1566,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1439611200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1584,7 +1578,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1439870400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1596,7 +1590,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1441080000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1608,7 +1602,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1441339200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1620,7 +1614,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1442462400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1632,7 +1626,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1443412800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1644,7 +1638,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1445227200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1656,7 +1650,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1445745600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1668,7 +1662,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1446264000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1680,7 +1674,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1446699600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1692,7 +1686,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1447909200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1704,7 +1698,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1449723600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1716,7 +1710,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1450674000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1728,7 +1722,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1451278800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1740,7 +1734,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1452142800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1752,7 +1746,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1453093200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1764,7 +1758,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1454302800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1776,7 +1770,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1455598800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1788,7 +1782,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1457672400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1800,7 +1794,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1461124800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1812,7 +1806,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1461816000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1824,7 +1818,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1462334400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1836,7 +1830,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1466136000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1848,7 +1842,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1467259200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1860,7 +1854,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1468036800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1872,7 +1866,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1468382400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1884,7 +1878,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1468814400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1896,7 +1890,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1470542400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1908,7 +1902,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1472529600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1920,7 +1914,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1473739200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1932,7 +1926,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1474171200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1944,7 +1938,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1475553600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1956,7 +1950,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1476072000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1968,7 +1962,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1483419600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1980,7 +1974,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1489636800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -1992,7 +1986,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1490846400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2004,7 +1998,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1514178000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2016,7 +2010,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1515301200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2028,7 +2022,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1515733200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2040,7 +2034,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1516338000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2052,7 +2046,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1520744400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2064,7 +2058,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1521345600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2076,7 +2070,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1521864000000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2088,7 +2082,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1525492800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2100,7 +2094,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1527652800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2112,7 +2106,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1530849600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2124,7 +2118,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1543467600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2136,7 +2130,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1544158800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2148,7 +2142,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1544504400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2160,7 +2154,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1545022800000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2172,7 +2166,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1546059600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2184,7 +2178,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1547096400000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2196,7 +2190,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1548997200000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",
@@ -2208,7 +2202,7 @@ export const db: DB = {
           "_id": new ObjectId(),
           "date": {
             "$date": {
-              "$numberLong": "1549515600000"
+              "$numberLong": new Date()
             }
           },
           "listing_id": "1001265",

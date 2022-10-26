@@ -12,9 +12,9 @@ const paginateAccommodationList = (
   let paginatedAccommodationList = [...accommodationList];
   if (page && pageSize) {
     const startIndex = (page - 1) * pageSize;
-  const endIndex = Math.min(startIndex + pageSize, paginatedAccommodationList.length);
-  paginatedAccommodationList = paginatedAccommodationList.slice(startIndex, endIndex);
-}
+    const endIndex = Math.min(startIndex + pageSize, paginatedAccommodationList.length);
+    paginatedAccommodationList = paginatedAccommodationList.slice(startIndex, endIndex);
+  }
   
   return paginatedAccommodationList;
 };
@@ -28,16 +28,20 @@ export const mockRepository: AccommodationRepository = {
     })
     return dbFilteredAccommodations.length === 0 ? paginateAccommodationList(db.accommodations, page, pageSize) : paginateAccommodationList(dbFilteredAccommodations, page, pageSize)
   },
-  getAccommodationById: async (id: string) => db.accommodations.find((accommodation) => accommodation._id === new Object(id)),
+  getAccommodationById: async (id: string) => {
+    return db.accommodations.find((accommodation) => accommodation._id.toString() === id)
+  },
   insertReview: async (id: string, review: Review) => {
     const _id = new ObjectId(id);
     const reviewWithId = {
       ...review,
       _id
     }
-    return db.accommodations.map((accommodation) => {
-      Boolean(accommodation._id.toHexString()) ? accommodation.reviews.push(reviewWithId) : accommodation
+    const insertReview = db.accommodations.map((accommodation) => {
+      accommodation._id.toString() === id ? accommodation.reviews.push(reviewWithId) : accommodation
       return accommodation
     })
+
+    return insertReview.find(accommodation => accommodation._id.toString() === id)
   },
 };

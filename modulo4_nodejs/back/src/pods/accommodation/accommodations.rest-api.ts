@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { accommodationRepository } from "dals";
 import { mapAccommodationFromModelToApi, mapAccommodationListFromModelToApi, mapAccommodationFromApiToModel } from "./accommodation.mappers";
-import { ObjectId } from "mongodb";
 
 export const accommodationsApi = Router();
 
@@ -32,11 +31,10 @@ accommodationsApi
       if (await accommodationRepository.getAccommodationById(id)) {
         const review = mapAccommodationFromApiToModel(req.body);
         const newReview = await accommodationRepository.insertReview(id, review);
-        res.status(201).send(mapAccommodationListFromModelToApi(newReview));
+        res.status(201).send(mapAccommodationFromModelToApi(newReview));
       } else {
         res.sendStatus(404);
       }
-      
     } catch(error) {
       next(error)
     }
