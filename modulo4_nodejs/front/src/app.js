@@ -1,6 +1,6 @@
 console.log('Running front app');
 
-fetch('https://localhost:3000/api/accommodations')
+fetch('/api/accommodations')
   .then((response) => {
     return response.json();
   })
