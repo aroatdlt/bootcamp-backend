@@ -1,6 +1,6 @@
 console.log('Running front app');
 
-fetch('/api/accommodations')
+fetch('/api/accommodations?country=Portugal')
   .then((response) => {
     return response.json();
   })

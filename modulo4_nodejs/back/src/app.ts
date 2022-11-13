@@ -1,17 +1,11 @@
 import express from "express";
 import path from "path";
-import https from 'https'
-import fs from 'fs';
+import http from 'http'
 
 import { accommodationsApi } from "./pods/accommodation";
 import { createRestApiServer, connectToDBServer } from 'core/servers';
 import { envConstants } from "core/constants";
 import { logRequestMiddleware, logErrorRequestMiddleware} from "common/middlewares";
-
-const serverOptions = {
-  key: fs.readFileSync('certificates/key.pem'),
-  cert: fs.readFileSync('certificates/cert.pem'),
-}
 
 const restApiServer = createRestApiServer();
 
@@ -24,7 +18,7 @@ restApiServer.use("/api/accommodations", accommodationsApi);
 
 restApiServer.use(logErrorRequestMiddleware);
 
-const server = https.createServer(serverOptions, restApiServer);
+const server = http.createServer(restApiServer);
 
 server.listen(envConstants.PORT, async () => {
   if (!envConstants.isApiMock) {

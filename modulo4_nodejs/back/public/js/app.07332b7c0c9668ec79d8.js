@@ -1,0 +1,1 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[143],{389:()=>{console.log("Running front app"),fetch("/api/accommodations?country=Portugal").then((o=>o.json())).then((o=>{console.log({accommodations:o})}))}},o=>{var n=n=>o(o.s=n);o.O(0,[736],(()=>(n(248),n(389)))),o.O()}]);

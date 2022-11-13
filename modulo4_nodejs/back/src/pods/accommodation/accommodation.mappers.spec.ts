@@ -52,7 +52,8 @@ describe('pods/accommodation/accommodation.mappers spec', () => {
       const review: apiModel.Review = {
         _id: new ObjectId("60c20a334bec6a37b08acec9"), 
         date: new Date(),
-        reviewer_name: "Antonio", comments: "La casa era presiosa"
+        reviewer_name: "Antonio", 
+        comments: "La casa era presiosa"
       }
 
       // Act
